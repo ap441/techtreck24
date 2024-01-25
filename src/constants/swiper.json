@@ -1,0 +1,72 @@
+[
+    {
+        "imgURL": "./item1.png",
+        "name": "green coat full",
+        "category": "coats",
+        "price": "100$",
+        "old": "150$"
+    },
+    {
+        "imgURL": "./item2.png",
+        "name": "black watch",
+        "category": "Watches",
+        "price": "19$",
+        "old": "109$"
+    },
+    {
+        "imgURL": "./item3.png",
+        "name": "blue shoes",
+        "category": "Shoes",
+        "price": "10$",
+        "old": "100$"
+    },
+    {
+        "imgURL": "./item4.png",
+        "name": "coat gray long",
+        "category": "Coats",
+        "price": "100$",
+        "old": "150$"
+    },
+    {
+        "imgURL": "./item5.png",
+        "name": "casual running shoes",
+        "category": "Shoes",
+        "price": "100$",
+        "old": "150$"
+    },
+    {
+        "imgURL": "./item6.png",
+        "name": "hooded coat",
+        "category": "Coat",
+        "price": "99$",
+        "old": "109$"
+    },
+    {
+        "imgURL": "./item7.png",
+        "name": "Leather shoes yellow",
+        "category": "Shoes",
+        "price": "80$",
+        "old": "100$"
+    },
+    {
+        "imgURL": "./item8.png",
+        "name": "Long coat sleeve",
+        "category": "Coats",
+        "price": "70$",
+        "old": "100$"
+    },
+    {
+        "imgURL": "./item9.png",
+        "name": "skylona watch",
+        "category": "Watches",
+        "price": "60$",
+        "old": "100$"
+    },
+    {
+        "imgURL": "./item10.png",
+        "name": "Titan green watch",
+        "category": "Watches",
+        "price": "50$",
+        "old": "100$"
+    }
+]
