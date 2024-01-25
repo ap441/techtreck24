@@ -8,3 +8,17 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 - You can view the project here - https://techtreck24-site.vercel.app/
+
+# Tech Stack:
+- Frontend: vite + Reactjs
+- Backend: :/
+
+# Languages:
+- html5
+- css
+- javascript
+
+# Libraries:
+- swiperjs
+- react-icons
+- react-countup
