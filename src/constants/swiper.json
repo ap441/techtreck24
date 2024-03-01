@@ -2,11 +2,13 @@
     {
         "imgURL": "./item1.png",
         "name": "Organic Cotton T-Shirt",
-        "category": "coats",
+        "category": "Men's Clothing",
         "price": "100$",
         "old": "150$",
+        "details": "This t-shirt is made from 100% organic cotton, cultivated without the use of synthetic pesticides or fertilizers, promoting sustainable agriculture practices.",
         "rating": 3,
-        "susscore": 2
+        "susscore": 2,
+        "hoverText": "This t-shirt is made from 100% organic cotton, cultivated without the use of synthetic pesticides or fertilizers, promoting sustainable agriculture practices."
     },
     {
         "imgURL": "./item2.png",
@@ -15,7 +17,8 @@
         "price": "19$",
         "old": "109$",
         "rating": 2,
-        "susscore": 3
+        "susscore": 3,
+        "hoverText": "This watch is crafted with eco-friendly materials and energy-efficient manufacturing processes, minimizing its environmental footprint."
     },
     {
         "imgURL": "./item3.png",
@@ -24,7 +27,8 @@
         "price": "10$",
         "old": "100$",
         "rating": 4,
-        "susscore": 4
+        "susscore": 4,
+        "hoverText": "These shoes are made using sustainable materials and ethical labor practices, reducing the impact on the environment and supporting fair working conditions."
     },
     {
         "imgURL": "./item4.png",
@@ -33,7 +37,8 @@
         "price": "100$",
         "old": "150$",
         "rating": 5,
-        "susscore": 3
+        "susscore": 3,
+        "hoverText": "This coat is crafted from recycled materials and manufactured using energy-efficient processes, contributing to a more sustainable fashion industry."
     },
     {
         "imgURL": "./item5.png",
@@ -42,7 +47,8 @@
         "price": "100$",
         "old": "150$",
         "rating": 4.5,
-        "susscore": 3.8
+        "susscore": 3.8,
+        "hoverText": "These running shoes are designed with eco-friendly materials and are built to last, reducing waste and promoting sustainable footwear choices."
     },
     {
         "imgURL": "./item6.png",
@@ -51,7 +57,8 @@
         "price": "99$",
         "old": "109$",
         "rating": 4.5,
-        "susscore": 3.8
+        "susscore": 3.8,
+        "hoverText": "This hooded coat is made from sustainable fabrics and produced in factories committed to minimizing their environmental impact, ensuring a greener wardrobe choice."
     },
     {
         "imgURL": "./item7.png",
@@ -60,7 +67,8 @@
         "price": "80$",
         "old": "100$",
         "rating": 4.5,
-        "susscore": 3.8
+        "susscore": 3.8,
+        "hoverText": "These leather shoes are crafted using responsibly sourced materials and ethical manufacturing practices, supporting sustainable fashion initiatives."
     },
     {
         "imgURL": "./item8.png",
@@ -69,7 +77,8 @@
         "price": "70$",
         "old": "100$",
         "rating": 4.5,
-        "susscore": 3.8
+        "susscore": 3.8,
+        "hoverText": "This long coat is produced with recycled fibers and eco-friendly dyes, contributing to a circular fashion economy and reducing environmental harm."
     },
     {
         "imgURL": "./item9.png",
@@ -78,7 +87,8 @@
         "price": "60$",
         "old": "100$",
         "rating": 4.5,
-        "susscore": 3.8
+        "susscore": 3.8,
+        "hoverText": "This watch is made with sustainable materials and responsible manufacturing processes, ensuring a stylish accessory that's also gentle on the planet."
     },
     {
         "imgURL": "./item10.png",
@@ -87,13 +97,7 @@
         "price": "50$",
         "old": "100$",
         "rating": 4.5,
-        "susscore": 3.8
+        "susscore": 3.8,
+        "hoverText": "This green watch is crafted with recycled components and energy-efficient production methods, promoting environmental stewardship in the watch industry."
     }
 ]
-// Product Name: Organic Cotton T-Shirt
-// Details: This t-shirt is made from 100% organic cotton, cultivated without the use of synthetic pesticides or fertilizers, promoting sustainable agriculture practices.
-// Rating: 4.7/5
-// Price: $25
-// Discounted Cost: $20
-// Original Cost: $30
-// Category: Men's Clothing
