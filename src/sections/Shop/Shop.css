@@ -11,12 +11,18 @@
     max-width: max-content;
     padding: 1rem;
     gap: 0.6rem;
-    margin: auto;
+    margin: 20px;
     border: var(--border-2);
     border-radius: var(--border-radius-1);
     overflow: hidden;
     position: relative;
     transition: var(--transition);
+}
+
+.item-card:hover{
+    border-color: red;
+    /*border: 2px;*/
+    transform: scale(1.05);
 }
 
 .item-card img{

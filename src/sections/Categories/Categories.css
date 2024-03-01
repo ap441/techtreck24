@@ -9,8 +9,15 @@
 }
 
 .categories-card{
+    border: var(--border-2);
+    border-radius: var(--border-radius-1);
     text-align: center;
     cursor: pointer;
+}
+
+.categories-card img:hover {
+    border-color: red;
+    transform: scale(1.05);
 }
 
 .categories-card img{
@@ -19,6 +26,7 @@
     background-position: center;
     border: var(--border-1);
     border-radius: var(--border-radius-2);
+    transition: all ease-in-out 0.2s;
 }
 
 .categories-card h4{

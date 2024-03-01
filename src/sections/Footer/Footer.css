@@ -19,6 +19,7 @@
     width: 14rem;
     border-radius: var(--border-radius-1);
     margin: 1rem 0;
+    transition: var(--transition);
 }
 
 .footer-box:first-child h4{

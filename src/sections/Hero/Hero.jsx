@@ -1,13 +1,25 @@
-import React, { useState } from 'react'
-import CoatCard from '../../components/CoatCard'
-import './Hero.css'
-import { coatsData } from '../../constants'
-import coat1 from '/coat1.png'
-import CountUp from 'react-countup'
-import videoSource from '/vid.mp4'
+import React, { useState, useEffect } from 'react';
+import './Hero.css';
+import CountUp from 'react-countup';
 
 const Hero = () => {
-  const [coatImg, setcoatImg] = useState(coat1)
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+  const videoSources = [
+    '/vid.mp4',
+    '/vid2.mp4',
+    '/vid3.mp4',
+  ];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videoSources.length);
+    }, 5000);
+    console.log(currentVideoIndex);
+    return () => clearInterval(intervalId);
+  }, []);
+
+
   return (
     <section id="hero">
       <div className="hero-container container">
@@ -41,21 +53,41 @@ const Hero = () => {
         </div>
         <div className="hero-right">
           <div className="hero-right-container">
-          <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                class="herovid"
+          { currentVideoIndex==0 &&  <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="herovid"
             >
-                <source src={videoSource} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+              <source src="/vid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>}
+            { currentVideoIndex==1 && <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="herovid"
+            >
+              <source src="/vid2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>}
+            { currentVideoIndex==2 &&  <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="herovid"
+            >
+              <source src="/vid3.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
