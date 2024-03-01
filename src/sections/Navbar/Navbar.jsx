@@ -14,7 +14,7 @@ const Navbar = ({ cart }) => {
     <header>
       <nav>
         <div className='tn-container container'>
-          <a href="" className="logo">SpeedWagon Foundation</a>
+          <a href="" className="logo">Vastra Village</a>
           <div className="search-box">
             <input type="search" name="search" id="" placeholder='Search for Products...' />
             <div className="search-icon"><RiSearchLine/></div>

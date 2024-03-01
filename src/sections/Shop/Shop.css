@@ -36,10 +36,14 @@
     columns: var(--color-dark);
 }
 
-.item-card p{
+#cat{
     font-weight: 600;
     color: var(--color-dark);
     text-transform: capitalize;
+}
+
+p{
+    font-weight: 500;
 }
 
 .prie{
@@ -62,6 +66,10 @@
 
 .rating a{
     color: var(--color-secondary);
+}
+
+.susscore a{
+    color: green;
 }
 
 .card-buttons{

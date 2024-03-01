@@ -27,13 +27,24 @@ const Shop = () => {
                 <div className="item-card">
                   <img src={card.imgURL} alt='' />
                   <h4>{card.name}</h4>
-                  <p>{card.category}</p>
+                  <p id="cat">{card.category}</p>
                   <div className="rating">
-                    <a href=''><RiStarFill/></a>
-                    <a href=''><RiStarFill/></a>
-                    <a href=''><RiStarFill/></a>
-                    <a href=''><RiStarFill/></a>
-                    <a href=''><RiStarLine/></a>
+                    <p>Rating:</p>
+                    {Array.from({ length: Math.round(card.rating) }, (_, index) => (
+                      <a key={index} href=""><RiStarFill /></a>
+                    ))}
+                    {Array.from({ length: 5 - Math.round(card.rating) }, (_, index) => (
+                      <a key={index} href=""><RiStarLine /></a>
+                    ))}
+                  </div>
+                  <div className="susscore">
+                    <p>Sustainability Score:</p>
+                    {Array.from({ length: Math.round(card.susscore) }, (_, index) => (
+                      <a key={index} href=""><RiStarFill /></a>
+                    ))}
+                    {Array.from({ length: 5 - Math.round(card.susscore) }, (_, index) => (
+                      <a key={index} href=""><RiStarLine /></a>
+                    ))}
                   </div>
                   <div className="price">
                     <span>{card.price}</span>
@@ -44,9 +55,9 @@ const Shop = () => {
                     <button className="btn" onClick={() => addToCart(card)}>Add to Cart</button>
                   </div>
                   <div className="card-icons">
-                    <a href=""><RiHeartLine/></a>
-                    <a href=""><RiEyeLine/></a>
-                    <a href=""><RiShoppingCartLine/></a>
+                    <a href=""><RiHeartLine /></a>
+                    <a href=""><RiEyeLine /></a>
+                    <a href=""><RiShoppingCartLine /></a>
                   </div>
                 </div>
               </SwiperSlide>
@@ -62,7 +73,7 @@ export default Shop
 
 const SwiperButtons = () => {
   const swiper = useSwiper();
-  return(
+  return (
     <div className="swiper-buttons">
       <button className="btn" onClick={() => swiper.slidePrev()}>&lt;</button>
       <button className="btn" onClick={() => swiper.slideNext()}>&gt;</button>

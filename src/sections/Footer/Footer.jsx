@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="footer-container container">
           <div className="footer-box">
             <div className="footer-title">Promo</div>
-            <img src='/footer.png' alt='' />
-            <h4>The New Beast of The Gaming World</h4>
-            <p>Promo from January 25 2024</p>
+            <a href='https://www.worldfashionexchange.com/blog/what-is-sustainable-fashion-why-fashion-brands-need-to-be-more-sustainable/' target='_blank'><img src='/footer.png' alt='' /></a>
+            <h4><a href='https://www.worldfashionexchange.com/blog/what-is-sustainable-fashion-why-fashion-brands-need-to-be-more-sustainable/' target='_blank'>What is sustainable fashion? Why fashion brands need to be sustainable</a></h4>
+            <p>Promo from March 1 2024</p>
           </div>
           <div className="footer-box">
             <div className="footer-title">Quick Links</div>

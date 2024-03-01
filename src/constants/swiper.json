@@ -1,72 +1,94 @@
+
 [
     {
         "imgURL": "./item1.png",
         "name": "green coat full",
         "category": "coats",
         "price": "100$",
-        "old": "150$"
+        "old": "150$",
+        "rating": 3,
+        "susscore": 2
+
     },
     {
         "imgURL": "./item2.png",
         "name": "black watch",
         "category": "Watches",
         "price": "19$",
-        "old": "109$"
+        "old": "109$",
+        "rating": 2,
+        "susscore": 3
     },
     {
         "imgURL": "./item3.png",
         "name": "blue shoes",
         "category": "Shoes",
         "price": "10$",
-        "old": "100$"
+        "old": "100$",
+        "rating": 4,
+        "susscore": 4
     },
     {
         "imgURL": "./item4.png",
         "name": "coat gray long",
         "category": "Coats",
         "price": "100$",
-        "old": "150$"
+        "old": "150$",
+        "rating": 5,
+        "susscore": 3
     },
     {
         "imgURL": "./item5.png",
         "name": "casual running shoes",
         "category": "Shoes",
         "price": "100$",
-        "old": "150$"
+        "old": "150$",
+        "rating": 4.5,
+        "susscore": 3.8
     },
     {
         "imgURL": "./item6.png",
         "name": "hooded coat",
         "category": "Coat",
         "price": "99$",
-        "old": "109$"
+        "old": "109$",
+        "rating": 4.5,
+        "susscore": 3.8
     },
     {
         "imgURL": "./item7.png",
         "name": "Leather shoes yellow",
         "category": "Shoes",
         "price": "80$",
-        "old": "100$"
+        "old": "100$",
+        "rating": 4.5,
+        "susscore": 3.8
     },
     {
         "imgURL": "./item8.png",
         "name": "Long coat sleeve",
         "category": "Coats",
         "price": "70$",
-        "old": "100$"
+        "old": "100$",
+        "rating": 4.5,
+        "susscore": 3.8
     },
     {
         "imgURL": "./item9.png",
         "name": "skylona watch",
         "category": "Watches",
         "price": "60$",
-        "old": "100$"
+        "old": "100$",
+        "rating": 4.5,
+        "susscore": 3.8
     },
     {
         "imgURL": "./item10.png",
         "name": "Titan green watch",
         "category": "Watches",
         "price": "50$",
-        "old": "100$"
+        "old": "100$",
+        "rating": 4.5,
+        "susscore": 3.8
     }
 ]
