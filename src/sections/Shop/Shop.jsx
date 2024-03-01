@@ -4,8 +4,15 @@ import 'swiper/css';
 import data from '../../constants/swiper.json'
 import { RiEyeLine, RiHeartLine, RiShoppingCartLine, RiStarFill, RiStarLine } from 'react-icons/ri';
 import { swiperSettings } from '../../constants';
+import { useState } from 'react';
 
 const Shop = () => {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+  };
+
   return (
     <section id="shop">
       <div className="shop-container container">
@@ -34,7 +41,7 @@ const Shop = () => {
                   </div>
                   <div className="card-buttons">
                     <button className="btn">View Details</button>
-                    <button className="btn">Add to Cart</button>
+                    <button className="btn" onClick={() => addToCart(card)}>Add to Cart</button>
                   </div>
                   <div className="card-icons">
                     <a href=""><RiHeartLine/></a>

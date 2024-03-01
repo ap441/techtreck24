@@ -3,8 +3,13 @@ import './Navbar.css'
 import { RiSearchLine, RiUserFill, RiHeartFill, RiShoppingCartFill, RiMenu3Fill, RiCloseFill } from 'react-icons/ri'
 
 
-const Navbar = () => {
+const Navbar = ({ cart }) => {
   const [menuOpened, setMenuOpened] = useState(false);
+  const [cartOpened, setCartOpened] = useState(false);
+
+  const toggleCart = () => {
+    setCartOpened(!cartOpened);
+  };
   return (
     <header>
       <nav>
@@ -17,7 +22,8 @@ const Navbar = () => {
           <div className="tn-icons">
             <a href=''><RiUserFill size={25}/></a>
             <a className="fav-icon" href=''><RiHeartFill size={25}/><span className='count'>0</span></a>
-            <a className="cart-icon" href=''><RiShoppingCartFill size={25}/><span className='count'>0</span></a>
+            <div className="cart-icon"></div>
+            <a className="cart-icon" href='' onClick={toggleCart}><RiShoppingCartFill size={25}/><span className='count'>0</span></a>
           </div>
         </div>
         <hr />
@@ -53,6 +59,20 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      {cartOpened && (
+        <div className="cart-menu">
+          {cart.length === 0 ? (
+            <p>Your Cart is Empty</p>
+          ) : (
+            <ul>
+              {cart.map((item, index) => (
+                <li key={index}>{item.name}</li>
+                // Add other details as needed
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
     </header>
   )
 }

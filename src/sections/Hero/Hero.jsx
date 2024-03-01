@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import CoatCard from '../../components/CoatCard'
 import './Hero.css'
 import { coatsData } from '../../constants'
 import coat1 from '/coat1.png'
 import CountUp from 'react-countup'
+import videoSource from '/vid.mp4'
 
 const Hero = () => {
   const [coatImg, setcoatImg] = useState(coat1)
@@ -39,19 +40,17 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-right">
-          <img src={coatImg} alt='wagon'></img>
           <div className="hero-right-container">
-            {
-              coatsData.map((coat, i) => (
-                <div key={i}>
-                  <CoatCard
-                  imgURL={coat}
-                  changeCoatImage={(coat) => setcoatImg(coat)}
-                  coatImg={coatImg}
-                  />
-                </div>
-              ))
-            }
+          <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                class="herovid"
+            >
+                <source src={videoSource} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
